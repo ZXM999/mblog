@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zxm.mblog.dao.SoftDao" >
+    <resultMap id="SoftMap" type="com.zxm.mblog.model.Soft" ></resultMap>
+
+    <select id="getPrice" resultType="java.lang.Integer">
+        SELECT jg FROM t_echarts WHERE cpmc = #{name} ORDER BY YEAR
+    </select>
+
+    <select id="getAllProduct" resultType="java.lang.String">
+        SELECT DISTINCT cpmc FROM t_echarts WHERE ejml = #{ejml}
+    </select>
+
+
+</mapper>

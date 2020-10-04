@@ -1,0 +1,11 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://129.28.186.245:3306/mblog?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8
+    username: root
+    password: zxm123ZXM!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  #  mapper位置
+  mapper-locations: classpath:mapper/*.xml
